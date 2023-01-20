@@ -1,6 +1,45 @@
-.scarpe .card {
-  margin: 10px;
+.social img {
+  margin-right: 10px;
+  margin-left: 10px;
+  cursor: pointer;
 }
-.scarpe img {
+
+.carosello img {
   height: 180px;
+}
+
+.foto-scarpe > img {
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.text-secondary > svg {
+  height: 50px;
+  width: 50px;
+}
+
+.scelta {
+  background-color: beige;
+  padding: 10px;
+}
+.scelta li {
+  margin-right: 30px;
+  list-style: none;
+  cursor: pointer;
+}
+.scelta li:hover {
+  opacity: 0.5;
+}
+
+.transizione {
+  width: 530px;
+}
+
+.street img {
+  cursor: pointer;
+}
+
+.scarpe div {
+  margin: 15px 15px 0 0;
 }/*# sourceMappingURL=style.css.map */

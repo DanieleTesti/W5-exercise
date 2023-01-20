@@ -16,7 +16,12 @@
     <header>
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+          <div class="social">
+            <img src="./foto/svg/facebook.svg" alt="facebook" />
+            <img src="./foto/svg/instagram.svg" alt="instagram" />
+            <img src="./foto/svg/whatsapp.svg" alt="whatsapp" />
+          </div>
           <button
             class="navbar-toggler"
             type="button"
@@ -66,7 +71,7 @@
       </nav>
     </header>
     <main class="d-flex">
-      <aside class="m-2 p-2 border border-dark">
+      <!-- <aside class="m-2 p-2 border border-dark">
         <div class="category">
           <legend>Category</legend>
           <div>
@@ -121,72 +126,254 @@
             <label for="multicolor">Multicolor</label>
           </div>
         </div>
-      </aside>
-      <article>
-        <div>
-          <h2>Recommened</h2>
-          <div class="type_shoes d-flex justify-content-evenly">
-              <button type="button" class="btn btn-outline-primary">Adidas</button>
-              <button type="button" class="btn btn-outline-primary">Nike</button>
-              <button type="button" class="btn btn-outline-primary">Reebook</button>
-              <button type="button" class="btn btn-outline-primary">Vans</button>
+      </aside> -->
+      <article class="w-100">
+        <div class="scelta d-flex justify-content-center">
+          <ul class="list-group list-group-horizontal mr-3">
+            <li>Adidas</li>
+            <li>Nike</li>
+            <li>Reebook</li>
+            <li>Vans</li>
+          </ul>
         </div>
-        <div class="scarpe d-flex flex-wrap">
-            <div class="card" style="width: 18rem;">
-                <img src="./foto/af1.png" class="card-img-top" alt="af1">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
+        <div class="carousel d-flex justify-content-center">
+          <div
+            id="carouselExampleAutoplaying"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner transizione">
+              <div
+                class="foto-scarpe carousel-item active"
+                data-bs-interval="3000"
+              >
+                <img src="./foto/af1.png" class="d-block" alt="3000" />
+                <div></div>
               </div>
-              <div class="card" style="width: 18rem;">
-                <img src="./foto/dunk_low.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
+              <div class="foto-scarpe carousel-item" data-bs-interval="3000">
+                <img src="./foto/jordan_red.png" class="d-block" alt="..." />
               </div>
-              <div class="card" style="width: 18rem;">
-                <img src="./foto/jordan_red.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
+              <div class="foto-scarpe carousel-item" data-bs-interval="3000">
+                <img src="./foto/saetta.png" class="d-block" alt="..." />
               </div>
-              <div class="card" style="width: 18rem;">
-                <img src="./foto/mcqueen.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-              <div class="card" style="width: 18rem;">
-                <img src="./foto/saetta.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-              <div class="card" style="width: 18rem;">
-                <img src="./foto/timberland.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
+            </div>
+          </div>
         </div>
+        <div class="py-5 mx-3">
+          <h2>Consigliati per te</h2>
+        </div>
+        <div class="scarpe d-flex flex-wrap justify-content-center">
+          <div class="card" style="width: 18rem">
+            <img src="./foto/af1.png" class="card-img-top" alt="af1" />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img src="./foto/dunk_low.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img src="./foto/jordan_red.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img src="./foto/mcqueen.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img src="./foto/saetta.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img src="./foto/timberland.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="partner d-flex justify-content-center m-5 border 2 border-secondary-subtle"
+        ></div>
       </article>
     </main>
+    <div class="street d-flex justify-content-evenly">
+      <img src="./foto/streetwear.png" alt="streetwear" />
+      <img src="./foto/swatch.png" alt="swatch" />
+    </div>
+    <div class="recensioni">
+      <div class="container my-5">
+        <div class="row">
+          <div class="col col-12">
+            <h2 class="text-center">Dicono di noi</h2>
+          </div>
+        </div>
+        <div class="row my-3">
+          <div class="col col-1">
+            <div class="text-secondary">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                class="bi bi-person-circle"
+                viewBox="0 0 16 16"
+              >
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                <path
+                  fill-rule="evenodd"
+                  d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="col col-11">
+            <h5>Username</h5>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque,
+              quas. Non voluptate hic, quam asperiores eveniet natus
+              consequuntur impedit unde, voluptas commodi quaerat qui laboriosam
+              officiis sint voluptates perferendis incidunt. Lorem ipsum dolor
+              sit amet consectetur adipisicing elit. Porro, recusandae id.
+              Tempora repellat quae voluptatum reiciendis earum explicabo culpa
+              corporis perferendis, pariatur est iusto quis animi ullam, minima
+              distinctio consequatur.
+            </p>
+          </div>
+        </div>
+        <div class="row my-3">
+          <div class="col col-1">
+            <div class="text-secondary">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                class="bi bi-person-circle"
+                viewBox="0 0 16 16"
+              >
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                <path
+                  fill-rule="evenodd"
+                  d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="col col-11">
+            <h5>Username</h5>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque,
+              quas. Non voluptate hic, quam asperiores eveniet natus
+              consequuntur impedit unde, voluptas commodi quaerat qui laboriosam
+              officiis sint voluptates perferendis incidunt. Lorem ipsum dolor
+              sit amet consectetur adipisicing elit. Porro, recusandae id.
+              Tempora repellat quae voluptatum reiciendis earum explicabo culpa
+              corporis perferendis, pariatur est iusto quis animi ullam, minima
+              distinctio consequatur.
+            </p>
+          </div>
+        </div>
+        <div class="row my-3">
+          <div class="col col-1">
+            <div class="text-secondary">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                class="bi bi-person-circle"
+                viewBox="0 0 16 16"
+              >
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                <path
+                  fill-rule="evenodd"
+                  d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="col col-11">
+            <h5>Username</h5>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque,
+              quas. Non voluptate hic, quam asperiores eveniet natus
+              consequuntur impedit unde, voluptas commodi quaerat qui laboriosam
+              officiis sint voluptates perferendis incidunt. Lorem ipsum dolor
+              sit amet consectetur adipisicing elit. Porro, recusandae id.
+              Tempora repellat quae voluptatum reiciendis earum explicabo culpa
+              corporis perferendis, pariatur est iusto quis animi ullam, minima
+              distinctio consequatur.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <footer
+      class="text-bg-dark d-flex flex-column justify-content-center align-items-center py-4"
+    >
+      <p>
+        <button type="button" class="btn btn-outline-secondary" id="contattaci">
+          Contattaci
+        </button>
+        <button
+          type="button"
+          id="contaScarpe"
+          class="btn btn-outline-secondary"
+        >
+          Scopri quante scarpe abbiamo
+        </button>
+        <button type="button" id="pulisci" class="btn btn-outline-secondary">
+          Pulisci
+        </button>
+        <button
+          type="button"
+          id="ritorna"
+          class="btn btn-outline-secondary d-none"
+        >
+          ritorna le card
+        </button>
+      </p>
+      <p>&copy 2023 Otter Travel Agency. All Rights Reserved</p>
+    </footer> -->
+    <!-- </main> -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+    <script src="./script.js"></script>
   </body>
 </html>
