@@ -10,7 +10,7 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./scss/style.css" />
+    <link rel="stylesheet" href="./scss/app.css" />
   </head>
   <body>
     <header>
@@ -21,6 +21,7 @@
             <img src="./foto/svg/facebook.svg" alt="facebook" />
             <img src="./foto/svg/instagram.svg" alt="instagram" />
             <img src="./foto/svg/whatsapp.svg" alt="whatsapp" />
+            <button onclick="changeTheme()">Cambia tema</button>
           </div>
           <button
             class="navbar-toggler"
@@ -47,86 +48,13 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">Pricing</a>
               </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Dropdown link
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
     <main class="d-flex">
-      <!-- <aside class="m-2 p-2 border border-dark">
-        <div class="category">
-          <legend>Category</legend>
-          <div>
-            <input type="radio" id="sneakers" name="category" value="louie" />
-            <label for="sneakers">Sneakers</label>
-          </div>
-          <div>
-            <input type="radio" id="flats" name="category" value="louie" />
-            <label for="flats">Flats</label>
-          </div>
-          <div>
-            <input type="radio" id="sandals" name="category" value="louie" />
-            <label for="sandals">Sandals</label>
-            <div></div>
-            <input type="radio" id="heals" name="category" value="louie" />
-            <label for="heals">Heals</label>
-          </div>
-        </div>
-        <div class="price">
-          <legend>Price</legend>
-          <div>
-            <input type="radio" id="low" name="price" value="louie" />
-            <label for="low">0$-50$</label>
-          </div>
-          <div>
-            <input type="radio" id="med" name="price" value="louie" />
-            <label for="med">50$-100$</label>
-          </div>
-          <div>
-            <input type="radio" id="expensive" name="price" value="louie" />
-            <label for="expensive">100$-150$</label>
-            <div></div>
-            <input type="radio" id="super" name="price" value="louie" />
-            <label for="super">150$-250$</label>
-          </div>
-        </div>
-        <div class="color">
-          <legend>Color</legend>
-          <div>
-            <input type="radio" id="white" name="color" />
-            <label for="white">white</label>
-          </div>
-          <div>
-            <input type="radio" id="red" name="color" />
-            <label for="red">Red</label>
-          </div>
-          <div>
-            <input type="radio" id="black" name="color" />
-            <label for="black">Black</label>
-            <div></div>
-            <input type="radio" id="multicolor" name="color" />
-            <label for="multicolor">Multicolor</label>
-          </div>
-        </div>
-      </aside> -->
+      </aside>
       <article class="w-100">
         <div class="scelta d-flex justify-content-center">
           <ul class="list-group list-group-horizontal mr-3">
@@ -147,87 +75,111 @@
                 class="foto-scarpe carousel-item active"
                 data-bs-interval="3000"
               >
-                <img src="./foto/af1.png" class="d-block" alt="3000" />
+                <img src="./foto/af1_preview_rev_1.png" class="d-block" alt="3000" />
                 <div></div>
               </div>
               <div class="foto-scarpe carousel-item" data-bs-interval="3000">
-                <img src="./foto/jordan_red.png" class="d-block" alt="..." />
+                <img src="./foto/jordan_red_preview_rev_1.png" class="d-block" alt="..." />
               </div>
               <div class="foto-scarpe carousel-item" data-bs-interval="3000">
-                <img src="./foto/saetta.png" class="d-block" alt="..." />
+                <img src="./foto/saetta_preview_rev_1.png" class="d-block" alt="..." />
               </div>
             </div>
           </div>
         </div>
-        <div class="py-5 mx-3">
+        <div class="pb-3 mx-3 fw-bold">
           <h2>Consigliati per te</h2>
         </div>
         <div class="scarpe d-flex flex-wrap justify-content-center">
           <div class="card" style="width: 18rem">
             <img src="./foto/af1.png" class="card-img-top" alt="af1" />
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <div class="description">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+              <div class="compra  ">
+              <a href="#" onclick="carrello()" class="btn btn-primary">Aggiungi al carrello</a>
+              </div>
             </div>
           </div>
           <div class="card" style="width: 18rem">
             <img src="./foto/dunk_low.png" class="card-img-top" alt="..." />
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <div class="description">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+              <div class="compra ">
+              <a href="#" onclick="carrello()" class="btn btn-primary">Aggiungi al carrello</a>
+              </div>
             </div>
           </div>
           <div class="card" style="width: 18rem">
             <img src="./foto/jordan_red.png" class="card-img-top" alt="..." />
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <div class="description">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+              <div class="compra ">
+              <a href="#" onclick="carrello()" class="btn btn-primary">Aggiungi al carrello</a>
+              </div>
             </div>
           </div>
           <div class="card" style="width: 18rem">
             <img src="./foto/mcqueen.png" class="card-img-top" alt="..." />
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
+              <div class="description">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+              <div class="compra ">
+              <a href="#" onclick="carrello()" class="btn btn-primary">Aggiungi al carrello</a>
+              </div>
+                        </div>
           </div>
           <div class="card" style="width: 18rem">
             <img src="./foto/saetta.png" class="card-img-top" alt="..." />
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
+              <div class="description">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+              <div class="compra ">
+              <a href="#" onclick="carrello()" class="btn btn-primary">Aggiungi al carrello</a>
+              </div>
+                        </div>
           </div>
           <div class="card" style="width: 18rem">
             <img src="./foto/timberland.png" class="card-img-top" alt="..." />
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
+              <div class="description">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+              <div class="compra ">
+              <a href="#" onclick="carrello()" class="btn btn-primary">Aggiungi al carrello</a>
+              </div>
+                        </div>
           </div>
         </div>
         <div
@@ -341,34 +293,26 @@
         </div>
       </div>
     </div>
-    <!-- <footer
-      class="text-bg-dark d-flex flex-column justify-content-center align-items-center py-4"
+    <footer
+      class="d-flex flex-column justify-content-center align-items-center py-4"
     >
       <p>
-        <button type="button" class="btn btn-outline-secondary" id="contattaci">
+        <button type="button" class="bottoni_footer btn btn-outline-light">
           Contattaci
         </button>
-        <button
-          type="button"
-          id="contaScarpe"
-          class="btn btn-outline-secondary"
-        >
-          Scopri quante scarpe abbiamo
+        <button type="button" id="contaScarpe" class="bottoni_footer btn btn-outline-light" onclick="conta()">
+          Scopri quanti oggetti hai nel carello
         </button>
-        <button type="button" id="pulisci" class="btn btn-outline-secondary">
-          Pulisci
+        <button type="button" id="pulisci" class="bottoni_footer btn btn-outline-light" onclick="svuota()">
+          Svuota il carrello
         </button>
-        <button
-          type="button"
-          id="ritorna"
-          class="btn btn-outline-secondary d-none"
-        >
+        <button type="button" id="ritorna" class="bottoni_footer btn btn-outline-light d-none">
           ritorna le card
         </button>
       </p>
-      <p>&copy 2023 Otter Travel Agency. All Rights Reserved</p>
-    </footer> -->
-    <!-- </main> -->
+      <p>&copy 2023 Daniele Testi's shop. All Rights Reserved</p>
+    </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"

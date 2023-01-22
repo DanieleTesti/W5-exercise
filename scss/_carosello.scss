@@ -1,0 +1,15 @@
+.carosello {
+  img {
+    height: 180px;
+  }
+}
+
+.foto-scarpe > img {
+  height: 300px;
+  object-fit: cover;
+}
+
+.transizione {
+  //PER NON FAR SBORDARE L'IMMAGINE DURANTE LO SWIPE
+  width: 530px;
+}

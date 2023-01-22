@@ -1,0 +1,74 @@
+[data-theme=dark] body {
+  background-color: rgb(29, 29, 29);
+}
+[data-theme=dark] h1,
+[data-theme=dark] h2,
+[data-theme=dark] h3,
+[data-theme=dark] h4,
+[data-theme=dark] h6,
+[data-theme=dark] li,
+[data-theme=dark] .recensioni h5,
+[data-theme=dark] .recensioni p,
+[data-theme=dark] footer p,
+[data-theme=dark] footer button {
+  color: white;
+}
+[data-theme=dark] footer button {
+  border: 1px solid white;
+}
+[data-theme=dark] footer,
+[data-theme=dark] .scelta,
+[data-theme=dark] .social img:hover {
+  background-color: rgb(120, 120, 120);
+}
+
+footer {
+  background-color: beige;
+}
+
+.bottoni_footer {
+  color: black;
+  border: 1px solid black;
+}
+
+.carosello img {
+  height: 180px;
+}
+
+.foto-scarpe > img {
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.transizione {
+  width: 530px;
+}
+
+.scelta {
+  background-color: beige;
+  padding: 10px;
+}
+.scelta li {
+  margin-right: 30px;
+  list-style: none;
+  cursor: pointer;
+}
+.scelta li:hover {
+  opacity: 0.5;
+}
+
+.street img {
+  cursor: pointer;
+}
+
+.social img {
+  padding: 1em;
+  border-radius: 20%;
+  margin-right: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.social img:hover {
+  background-color: beige;
+}/*# sourceMappingURL=app.css.map */

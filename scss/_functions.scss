@@ -1,0 +1,27 @@
+[data-theme="dark"] {
+  body {
+    background-color: $dark_bg;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h6,
+  li,
+  .recensioni h5,
+  .recensioni p,
+  footer p,
+  footer button {
+    color: $white-color;
+  }
+
+  footer button {
+    border: 1px solid $white-color;
+  }
+
+  footer,
+  .scelta,
+  .social img:hover {
+    background-color: $footer_bg;
+  }
+}

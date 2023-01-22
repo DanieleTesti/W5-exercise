@@ -1,0 +1,36 @@
+@import "variables";
+@import "functions";
+@import "footer";
+@import "carosello";
+
+.scelta {
+  background-color: $normal_bg;
+  padding: 10px;
+  li {
+    margin-right: 30px;
+    list-style: none;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
+
+.street {
+  img {
+    cursor: pointer;
+  }
+}
+
+.social {
+  img {
+    padding: 1em;
+    border-radius: 20%;
+    margin-right: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    &:hover {
+      background-color: $normal_bg;
+    }
+  }
+}
