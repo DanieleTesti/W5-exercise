@@ -45,6 +45,20 @@ footer {
   width: 530px;
 }
 
+@media screen and (max-width: 1250px) {
+  .street {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .street img {
+    margin: 0.5em;
+  }
+}
+@media screen and (max-width: 810px) {
+  #orologi {
+    width: 422px;
+  }
+}
 .scelta {
   background-color: beige;
   padding: 10px;
@@ -60,6 +74,10 @@ footer {
 
 .street img {
   cursor: pointer;
+}
+
+.carta {
+  margin: 5px 10px 5px 0;
 }
 
 .social img {

@@ -1,0 +1,15 @@
+@media screen and (max-width: 1250px) {
+  .street {
+    display: flex;
+    flex-wrap: wrap;
+    img {
+      margin: 0.5em;
+    }
+  }
+}
+
+@media screen and(max-width:810px) {
+  #orologi {
+    width: 422px;
+  }
+}

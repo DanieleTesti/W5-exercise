@@ -2,6 +2,7 @@
 @import "functions";
 @import "footer";
 @import "carosello";
+@import "mediaQueries";
 
 .scelta {
   background-color: $normal_bg;
@@ -20,6 +21,10 @@
   img {
     cursor: pointer;
   }
+}
+
+.carta {
+  margin: 5px 10px 5px 0;
 }
 
 .social {
